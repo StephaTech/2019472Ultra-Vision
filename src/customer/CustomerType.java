@@ -8,6 +8,7 @@ public enum CustomerType {//defining the constants the Enum constructor supplied
 	VL ("Video Lovers"),//can only rent movies(excluding Live Concert Videos)
 	TV ("TV Lover"),//can only rent Box Sets.
 	PR ("Premium");//can rent any titlle.
+	//the media formats include CD, DVD, and Blu-Ray
 	
 	private String subscription;//associating with customerType above
 	
