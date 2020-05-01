@@ -34,34 +34,15 @@ import javax.swing.JTextField;
 public class Main extends JFrame implements ActionListener {//ActionListener require the import and override actionEvent on the botton of the code
 	//JFrame is the entire window and the base to which every other component add below.
 
-	//BorderLayout shopStaff = new BorderLayout();
-	//BorderLayout customer = new BorderLayout();
+	
 	//line above from tutorialspoint Smita Kapse published on 30-May-2019
 	GridBagLayout shopStaff = new GridBagLayout();//to center the component JLabel
 	
-	String[][] dataCustomer = new String[100][6];//
-	String[] dataColName = {"id", "nickName", "address", "membershipCard","email", "points"}; 
-	
-	public JButton bSaveAdd;
-	JLabel cust_id;
-	public JTextField textcust_id;
-	
-	JLabel laddress;
-	public JTextField taddress;
-	
-	JLabel lnickName;
-	public JTextField temail;
-	
-	JLabel lmembership;
-	JLabel lRole;
 	
 	
-	public static void main(String[] args) {
-		// main method
+	JButton button;
 
-		new Main();
-
-	}
+	
 public Main() {//main method
     
 	//default constructor setting some attributes
@@ -85,6 +66,8 @@ public Main() {//main method
 	JMenu rentMenu = new JMenu("Rents");//add rents to the  Menubar
 	myMenuBar.add(rentMenu);
 	
+	button = new JButton();
+    add(button);
 	
 	JMenuItem searchCustomerItem = new JMenuItem("Search customers");//is just another object
     customerMenu.add(searchCustomerItem);//add to the menu
@@ -142,27 +125,35 @@ public Main() {//main method
 	
 	
 }
+public static void main(String[] args) {
+	// main method
+	
+	new Main();
+	
+}
 //**********Action Listener****************
+
+/*class thehandler implements ActionListener{
+
+@Override
+public void actionPerformed(ActionEvent e) {
+	// TODO Auto-generated method stub
+	System.out.println("Type Customer Name: ");
+}}*/
+
 @Override
 public void actionPerformed(ActionEvent argo) {
 	// TODO Auto-generated method stub
 	
-	String ac = argo.getActionCommand();
-
-	if (argo.equals("SearchCustomers")){
-		
-				
-		//these two components normally go together hand in hand
-		JTable CustomerTable;
-		JScrollPane scrollCustomer;//need to be able to scroll through it
+	//System.out.println("****Thank you for use Utra-Vision Rental Shop Management Console*****");
 	
-		JFrame frame = new JFrame("Search Customer");
-		frame.setSize(600,600);
-		frame.setVisible(true);
-		
-		GridLayout searchCustManager = new GridLayout(0, 1);
-		frame.setLayout(searchCustManager);
+	//new menu();
+	
+    //e.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+	//String ac = argo.getActionCommand();
+
+	//if (argo.equals("SearchCustomers")){}
+	
 	}
-}
 
 }
