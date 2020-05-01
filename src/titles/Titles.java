@@ -8,4 +8,19 @@ public class Titles {
 	private String director;//specific requirement CA and relevant to the nature
 	private String band;//specific requirement CA and relevant to the nature
 	private String format;//the media formats include CD,DVD, and Blu-Ray
+	
+	public Titles() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void searchtitles() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void addnewtitles() {
+		// TODO Auto-generated method stub
+		
+	}
+	
 }
