@@ -13,6 +13,7 @@ Availability: https://www.w3schools.com/php/php_if_else.asp
 
 //********imports added******************
 import java.awt.BorderLayout;
+
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -28,6 +29,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+import main.menu;
 
 
 
@@ -37,11 +39,8 @@ public class Main extends JFrame implements ActionListener {//ActionListener req
 	
 	//line above from tutorialspoint Smita Kapse published on 30-May-2019
 	GridBagLayout shopStaff = new GridBagLayout();//to center the component JLabel
-	
-	
-	
+		
 	JButton button;
-
 	
 public Main() {//main method
     
@@ -103,8 +102,7 @@ public Main() {//main method
     titleMenu.add(addTitleItem);
     addTitleItem.addActionListener(this);
     addTitleItem.setActionCommand("AddTitles");
-    
-        
+            
 	//******************Layout**************	
 	//Creating the JPanel similar to "div tags" in HTML
 	//main function is to separate sections of the GUI object
@@ -122,29 +120,28 @@ public Main() {//main method
 	//because more components has been add those below need to be use.
 	this.validate();
 	this.repaint();
-	
-	
+		
 }
 public static void main(String[] args) {
 	// main method
 	
 	new Main();
+	new menu();
 	
 }
 //**********Action Listener****************
-
-/*class thehandler implements ActionListener{
+/*
+class thehandler implements ActionListener{
 
 @Override
 public void actionPerformed(ActionEvent e) {
 	// TODO Auto-generated method stub
-	System.out.println("Type Customer Name: ");
+	System.out.println("\O/");
 }}*/
 
 @Override
 public void actionPerformed(ActionEvent argo) {
 	// TODO Auto-generated method stub
-	
 	//System.out.println("****Thank you for use Utra-Vision Rental Shop Management Console*****");
 	
 	//new menu();
@@ -153,6 +150,8 @@ public void actionPerformed(ActionEvent argo) {
 	//String ac = argo.getActionCommand();
 
 	//if (argo.equals("SearchCustomers")){}
+	System.out.print(":) :) :) :) :)");
+
 	
 	}
 

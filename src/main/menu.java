@@ -2,6 +2,7 @@ package main;
 
 import java.util.Scanner;
 
+
 import customer.Customer;
 import titles.Titles;
 
@@ -48,7 +49,7 @@ public class menu {
 			case 5:
 				title.addnewtitles();
 			default:
-				System.out.println("Invalid try again");
+				System.out.println("Invalid  option, please try again");
 				break;
 			}
 		

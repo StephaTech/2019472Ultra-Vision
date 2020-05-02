@@ -41,7 +41,7 @@ public class Customer {
 					return;
 				}
 			}
-			System.out.println("Customer not found, try again.");
+			System.out.println("Customer not found, please try again.");
 				
 		}
 		
