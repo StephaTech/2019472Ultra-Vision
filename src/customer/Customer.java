@@ -32,7 +32,7 @@ public class Customer {
 			String id;
 			boolean result;
 			
-			System.out.println("ID number: ");
+			System.out.println("Enter ID number: ");
 			
 			id = sc.nextLine();
 			for(Customer customer : customerlist) {
@@ -49,15 +49,15 @@ public class Customer {
 			Customer customer = new Customer();
 			
 			System.out.println("****Add Customer****");
-			
+			System.out.println("\n");
 			System.out.println("Id: ");
-			customer.setId(sc.nextLine());//nextInt int
-			//sc.nextLine();
+			customer.setId(sc.nextLine());//nextline ...readLine not working??
+			System.out.println("\n");
 			System.out.println("Name: ");
 			customer.setName(sc.nextLine());//nextLine string
 			
 			
-			System.out.println("Membership: ");
+			System.out.println("Membership: (ML), (VL), (TV), (PR)");
 			customer.setMembership(sc.nextLine());
 			
 			System.out.println("Email: ");
@@ -65,6 +65,7 @@ public class Customer {
 			
 			System.out.println("Points: ");
 			customer.setPoints(sc.nextInt());;
+			System.out.println("\n");
 			
 			customerlist.add(customer);
 			

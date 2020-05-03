@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import customer.Customer;
+
 public class Titles {
 	
 	Scanner sc = new Scanner(System.in);
@@ -79,6 +81,62 @@ public class Titles {
 		
 		titleList.add(title);
 	}
+	public void renttitles() {
+		// TODO Auto-generated method stub
+		String nametitle;
+		
+		Customer customer = new Customer();//importing customer class
+		
+		System.out.println("******Rent a Title(Music, Movie or Box Set)******");
+		System.out.println("Title name: ");
+		nametitle = sc.nextLine();
+		
+		for (Titles title : titleList) {
+			if (title.getTitleName().equals(nametitle)) {
+			System.out.println("Titles found are: ..." + 
+			"\n Title: " + getTitleName() +
+			"\n Year of release: " + getYearOfRelease() +
+			"\n Price: " + getPrice());
+		}
+	}
+		System.out.println("Sorry, title not found.");
+		
+		if (!("Sorry, title not found.".equals(nametitle))) {
+			System.out.println("Would you like to try with ID customer? ");
+			String option = null;
+			
+			switch(option) {
+			case "yes:":
+			//case "YES":
+				System.out.println("Enter customer ID: ");
+				String customerid = sc.nextLine();
+				
+				for (Customer pcustomer : customer.customerlist) {
+					if(customer.getId().equals(customer.getId())) {
+						System.out.println("ID customer found is: ..." + 
+			"\n Name: " + customer.getName() +
+			"\n Year of release: " + getYearOfRelease() +
+			"\n Price: " + getPrice());
+					}
+				}
+				System.out.println("ID customer not found.");
+				if(!("ID not found.".equals(customerid))) {
+					
+				}
+				
+				break;
+				
+			case "no":
+			//case "no":
+				
+			default:
+				System.out.println("Type yes or no.");
+			break;
+			}
+		}
+		
+	}
+	
 		
 	//Getter and setters	
 	public List<Titles> getTitleList() {

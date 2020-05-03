@@ -19,7 +19,9 @@ public class menu {
 		int option = 0;
 		
 		do {
+			System.out.println("**************************************************************");
 			System.out.println("****Welcome to Utra-Vision Rental Shop Management Console*****");
+			System.out.println("**************************************************************");
 			System.out.println("Select an option below");
 			System.out.println("********Customers********");
 			System.out.println("1. Search customers");
@@ -48,6 +50,9 @@ public class menu {
 				title.searchtitles();
 			case 5:
 				title.addnewtitles();
+				break;
+			case 6:
+				title.renttitles();
 			default:
 				System.out.println("Invalid  option, please try again");
 				break;

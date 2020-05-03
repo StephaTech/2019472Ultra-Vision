@@ -13,7 +13,7 @@ public class MembershipCard {
 	   }
 	   
 	   public boolean availFreeRent(){
-			if(this.isfreeRentAllowed()){//??
+			if(this.isfreeRentAllowed()){//??setfreeRentAllowed
 				this.points -= 100;
 				setRentAllowed();
 				return true;

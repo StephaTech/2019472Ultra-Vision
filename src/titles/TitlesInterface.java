@@ -1,6 +1,6 @@
 package titles;
 
-public interface TitlesInterface {	//ENUM OR INTERFACE?????
+public interface TitlesInterface {	//enum or interface?????
 
 	//below is the media formats include CCD,DVD and BlueRay
 	public String format_CD = "CD";
@@ -10,10 +10,8 @@ public interface TitlesInterface {	//ENUM OR INTERFACE?????
 	public void Format();//is the media title formats specified as a requirement on the CA
 	
 	//below is a method
-	public void addTitle(String titleType, String titleName, String genre, int yearOfRelease, String director, String band, String Format );
+	public void addnewtitles(String id,String titleType, String titleName, String genre, int yearOfRelease, String director, String band, String Format );
 	
-	//below is a method
-	public void updateTitle(int id,String titleType, String titleName, String genre, int yearOfRelease, String director, String band, String Format );
 
 	
 
