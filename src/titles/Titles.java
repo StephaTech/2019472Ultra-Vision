@@ -12,6 +12,7 @@ public class Titles {
 	
 	List<Titles> titleList = new ArrayList<Titles>();
 	
+	private int titleid;
 	private String titleType;//titles in the shop are broken down into types: selected
 	private String titleName;//name of the title up to me
 	private String genre;//specific requirement CA and relevant to the nature

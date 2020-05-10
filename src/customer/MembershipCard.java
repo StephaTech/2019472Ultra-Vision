@@ -1,11 +1,11 @@
 package customer;
 
-//Source code provide from Amilcar Aponte on moddle
+//Source code provide from Michael Weiss and Amilcar Aponte on moddle
 
 public class MembershipCard {
 	
 	private int points;
-	   private boolean freeRentAllowed;
+	private boolean freeRentAllowed;
 	   
 	   public void addPoints(int points){
 			this.points += points;
@@ -13,7 +13,7 @@ public class MembershipCard {
 	   }
 	   
 	   public boolean availFreeRent(){
-			if(this.isfreeRentAllowed()){//??setfreeRentAllowed
+			if(this.setRentAllowed()){//??setfreeRentAllowed
 				this.points -= 100;
 				setRentAllowed();
 				return true;
@@ -22,15 +22,17 @@ public class MembershipCard {
 			}
 	   }
 	   
-	   private void setRentAllowed(){
+	   private boolean setRentAllowed(){
 			if (this.points >= 100){
 				this.freeRentAllowed = true;
 			} else {
 				this.freeRentAllowed = false;
 			}
+			return freeRentAllowed;
 	   }
 	   
 	   public int getPoints() {
 			return  points;
 
 }
+	   }

@@ -53,6 +53,9 @@ public class menu {
 				break;
 			case 6:
 				title.renttitles();
+				break;
+			case 7:
+				title.renttitles();
 			default:
 				System.out.println("Invalid  option, please try again");
 				break;

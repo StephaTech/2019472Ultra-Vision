@@ -150,7 +150,7 @@ public void actionPerformed(ActionEvent argo) {
 	//String ac = argo.getActionCommand();
 
 	//if (argo.equals("SearchCustomers")){}
-	System.out.print(":) :) :) :) :)");
+	System.out.print(":( :/ :( :( :/");
 
 	
 	}
