@@ -42,9 +42,9 @@ public class menu {
 				customer.searchCustomers();
 				break;
 			case 2:
-				customer.addCustomers();
+				customer.addCustomers();//subscription Ishould call my enum here 
 			case 3: 
-				customer.updateCustomers();
+				customer.updateCustomers();//subscription enum class not working
 				break;
 			case 4:
 				title.searchtitles();

@@ -2,7 +2,7 @@ package main;
 //Stephany Lais A. Souza 2019472
 //Teacher Amilcar Aponte
 
-//******model**********
+//******model example in case**********
 /*The following 6 lines of code (or lines 10 to 19) has been sourced     *    from w3schools.com.
 Title: <title of program/source code>
 Author: <author(s) names>
@@ -37,7 +37,7 @@ public class Main extends JFrame implements ActionListener {//ActionListener req
 	//JFrame is the entire window and the base to which every other component add below.
 
 	
-	//line above from tutorialspoint Smita Kapse published on 30-May-2019
+	
 	GridBagLayout shopStaff = new GridBagLayout();//to center the component JLabel
 		
 	JButton button;
